@@ -1,8 +1,4 @@
-This project is run the same way that Finance was. The zip file can be opened in vscode for broswer and run on the locally hosted GitHub server.
-
-Registration and logging in is the same as before. This was not a central focus of the project, so I found it sufficient to keep. After logging in, you will see a logo, and four buttons labeled tickets, textbooks, dorm, sell, and ledger.
-
-The logo acts as a link to the home page. This is where a user is able to see all of the items that they have listed on the Exchange. The items that they have listed for sale are divided into categories.
+After logging in, you will see a logo, and four buttons labeled tickets, textbooks, dorm, sell, and ledger. The logo acts as a link to the home page. This is where a user is able to see all of the items that they have listed on the Exchange. The items that they have listed for sale are divided into categories.
 
 The ticket page is where users are able to buy tickets. It currently supports buying football tickets since have the highest demand and are the most likely to reach a secondary market. On the tickets page, a user is able to see all of the football games that have tickets being resold. You will be able to see the opponent, the game date, and the lowest asking price fo the ticket. If you press on the button to the right, you will be able to see all of the tickets with their associated seller, contact information, and asking price shown. It was originally intended to only show games with the opponent that was clicked, but there were many roadblocks when trying to accomplish this. This will be discussed more in DESIGN.md.
 
