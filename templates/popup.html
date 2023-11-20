@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <button type="submit" class="btn btn-primary" onclick="openPopup()">Submit</button>
+    </div>
+    <div class="popup" id="popup">
+        <h2>Thank You</h2>
+        <p>Your details have been...</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,1 @@
+insert into users (username, hash, user_id) values ("local", "worked", 1);

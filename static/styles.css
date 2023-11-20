@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Yale Color Palette */
+:root {
+    --yale-blue: #0F4D92;
+    --yale-white: #FFFFFF;
+    --yale-black: #000000;
+}
+
+/* Navbar */
+nav .navbar-brand {
+    font-size: xxx-large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--yale-blue);
+}
+
+nav .navbar {
+    background-color: var(--yale-white);
+    border-bottom: 2px solid var(--yale-blue);
+}
+
+/* Buttons */
+.btn-primary, .popup button {
+    background-color: var(--yale-blue);
+    color: var(--yale-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover, .popup button:hover {
+    background-color: darken(var(--yale-blue), 10%);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: var(--yale-blue);
+    color: var(--yale-white);
+}
+
+/* Product Images */
+img {
+    border-radius: 5px;
+    max-width: 50%;
+    height: auto;
+}
+
+/* Popup */
+.popup {
+    background-color: var(--yale-blue);
+    color: var(--yale-white);
+    /* Rest of your popup styles */
+}
+
+.open-popup {
+    background-color: var(--yale-blue);
+    color: var(--yale-white);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container, .popup {
+        width: 90%;
+    }
+
+    nav .navbar-brand {
+        font-size: medium;
+    }
+}

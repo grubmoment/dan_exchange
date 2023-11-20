@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Textbooks
+{% endblock %}
+
+{% block main %}
+{% for textbook in textbooks %}
+    <figure>
+        <img src="{{textbook.image_link}}" alt="textbook"/>
+        <figcaption>{{textbook.title}}, {{textbook.name}}, {{textbook.phone_number}}</figcaption>
+    </figure>
+{% endfor %}
+{% endblock %}

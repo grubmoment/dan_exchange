@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+<h4>What do you want to sell?</h4>
+
+<form action="/sell_tickets" method="post1">
+    <button class="btn btn-primary" type="submit">Ticket</button>
+</form>
+<form action="/sell_textbooks" method="post2">
+    <button class="btn btn-primary" type="submit">Textbook</button>
+</form>
+<form action="/sell_dorm_items" method="post3">
+    <button class="btn btn-primary" type="submit">Dorm Items</button>
+</form>
+{% endblock %}

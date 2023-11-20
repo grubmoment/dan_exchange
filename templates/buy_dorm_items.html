@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dorm Items
+{% endblock %}
+
+{% block main %}
+{% for dorm_item in dorm_items %}
+    <figure>
+        <img src="{{dorm_item.image_link}}" alt="dorm item"/>
+        <figcaption>{{dorm_item.item}}, {{dorm_item.name}}, {{dorm_item.phone_number}}</figcaption>
+    </figure>
+{% endfor %}
+{% endblock %}

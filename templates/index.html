@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>Your Items for Sale</h1>
+    <br></br>
+    <h2>Tickets</h2>
+    <table class="table">
+        <thead>
+            <td>Good ID</td>
+            <td>Opponent</td>
+            <td>Date</td>
+        </thead>
+        {% for ticket_f_s in tickets_f_s %}
+        <tr>
+            <td>{{ticket_f_s.good_id}}</td>
+            <td>{{ticket_f_s.opponent}}</td>
+            <td>{{ticket_f_s.date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br></br>
+    <h2>Textbooks</h2>
+    <table class="table">
+        <thead>
+            <td>Good ID</td>
+            <td>Title</td>
+        </thead>
+        {% for textbook_f_s in textbooks_f_s %}
+        <tr>
+            <td>{{textbook_f_s.good_id}}</td>
+            <td>{{textbook_f_s.title}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br></br>
+    <h2>Dorm Items</h2>
+    <table class="table">
+        <thead>
+            <td>Good ID</td>
+            <td>Item</td>
+        </thead>
+        {% for dorm_item_f_s in dorm_items_f_s %}
+        <tr>
+            <td>{{dorm_item_f_s.good_id}}</td>
+            <td>{{dorm_item_f_s.item}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

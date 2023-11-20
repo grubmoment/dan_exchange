@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+<form action="/sell_tickets" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" min="0" name="asking price" placeholder="Asking Price" type="number" required>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" name="name" placeholder="Name" type="text" required>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" name="netid" placeholder="NetID" type="text" required>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" name="phone number" placeholder="Phone Number" type="text" required>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" name="opponent" placeholder="Opponent" type="text" required>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" name="date" placeholder="Date" type="text" required>
+    </div>
+    <button class="btn btn-primary" type="submit">Post Ticket</button>
+</form>
+{% endblock %}

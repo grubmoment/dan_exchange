@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delist
+{% endblock %}
+
+{% block main %}
+<h4>Delisting your item after a transaction ensures you don't receive further offers.</h4>
+
+<form action="/delist" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" min="0" name="item id" placeholder="Item ID" type="number" required>
+    </div>
+    <button class="btn btn-primary" type="submit">Delist Item</button>
+</form>
+{% endblock %}
